@@ -1,9 +1,8 @@
 name: Greeting
 
 on:
-  push:
-    branches:
-    - feature/*
+  pull_request:
+    types: [closed]
 
 jobs:
   helloworld:
