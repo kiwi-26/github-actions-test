@@ -1,0 +1,13 @@
+name: Greeting
+
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  helloworld:
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Print a greeting
+      run: |
+        echo hello
